@@ -1,0 +1,78 @@
+2.2 Tema 2 — Portfólio de Banda ou Artista Musical (Samuel Venâncyo, Arthur Rampi e bruno Cândido )
+
+Site oficial de uma banda ou artista musical (real ou fictício). Combina design criativo com informações sobre discografia, shows e a história do artista.
+
+•        Sugestões de páginas:
+
+–       Home — apresentação impactante com foto ou arte do artista e últimas novidades.
+
+–       Sobre — biografia, história da banda e integrantes com fotos.
+
+–       Discografia — álbuns e singles com capa, ano e lista de faixas.
+
+–       Shows — agenda de eventos com datas, locais e link para ingressos.
+
+–       Galeria — fotos de shows, bastidores e videoclipes incorporados.
+
+–       Contato / Fã Clube — formulário de contato e cadastro na newsletter.
+
+3.5 Relatório da Entrega 1
+O grupo deve entregar um relatório em formato PDF ou DOCX contendo:
+
+•        Identificação do grupo (nomes e matrículas dos integrantes).
+
+•        Descrição do tema escolhido.
+
+•        Mapa do site (imagem incorporada).
+
+•        Descrição das páginas criadas e suas finalidades.
+
+•        URL do site publicado.
+
+•        URL do projeto no GitHub.
+
+•        Dificuldades encontradas e como foram superadas.
+
+•        Divisão de tarefas entre os integrantes.
+
+ 
+///////////////////////////////// TERMOS TECNICO ///////////////////////////////////
+
+3.1 Mapa do Site
+Antes de iniciar a codificação, o grupo deve elaborar um mapa do site (sitemap), que é um diagrama hierárquico mostrando todas as páginas e a navegação entre elas. O mapa deve:
+
+•        Ser entregue como imagem (PNG ou PDF) junto com o relatório.
+
+•        Identificar claramente a página inicial (Home) e todas as páginas secundárias.
+
+•        Indicar os links de navegação entre as páginas.
+
+•        Ferramenta sugerida: draw.io, Figma, Canva ou similar.
+
+3.2 Requisitos Técnicos — HTML
+•        Mínimo de 5 páginas HTML distintas.
+
+•        Uso de tags semânticas: <header>, <nav>, <main>, <section>, <article>, <footer>.
+
+•        Menu de navegação funcional presente em todas as páginas.
+
+•        Pelo menos uma página com formulário (contato, pesquisa, cadastro, etc.).
+
+•        Uso correto de cabeçalhos hierárquicos (<h1> a <h3>).
+
+•        Imagens com atributo alt preenchido corretamente.
+
+•        Links internos e externos funcionando.
+
+3.3 Requisitos Técnicos — CSS
+•        Arquivo CSS externo (não usar estilos inline ou <style> no HTML).
+
+•        Layout responsivo: o site deve funcionar em desktop e dispositivos móveis.
+
+•        Uso de Flexbox ou CSS Grid para estruturar o layout.
+
+•        Paleta de cores consistente e identidade visual definida.
+
+•        Estilização de formulário, navegação e pelo menos uma galeria ou grade de conteúdo.
+
+•        Uso de media queries para responsividade.

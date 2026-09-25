@@ -1,0 +1,161 @@
+/* Importar uma fonte estilo rock */
+@import url('https://googleapis.com');
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #121212; /* Fundo escuro da pagina */
+    color: #ffffff;
+}
+
+/* ==========================================================================
+   ESTILO DO CABEÇALHO (DESKTOP / COMPUTADOR)
+   ========================================================================== */
+.Header {
+    background-color: #1a1a1a; 
+    border-bottom: 4px solid #e50914; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Alinha os emojis horizontalmente com o texto */
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 12px; /* Espaço entre os emojis e o texto */
+}
+
+/* Logo */
+.Header h1 {
+    color: #ffffff;
+    font-size: 2rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 0px #e50914; /* Sombra roja */
+    margin: 0;
+}
+
+/* Ajusta o tamanho dos emojis */
+.morcego-emoji {
+    font-size: 1.8rem; 
+    filter: drop-shadow(0 0 5px #e50914); /* Mantém o brilho vermelho rockeiro */
+    display: inline-block;
+}
+
+/* Inverte o emoji da direita para que ele olhe para dentro */
+.morcego-dir {
+    transform: scaleX(-1);
+}
+
+/* Menu de navegaçao */
+.Header nav ul {
+    display: flex;
+    list-style: none;
+    gap: 25px; /* espaço entre botoes */
+    margin: 0;
+    padding: 0;
+}
+
+.Header nav a {
+    color: #b3b3b3; 
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    padding: 8px 16px;
+    border-radius: 4px;
+    display: inline-block;
+}
+
+/* Efeito ao passar o cursor do mouse */
+.Header nav a:hover {
+    color: #ffffff;
+    background-color: #e50914; /* Fondo rojo brillante */
+    box-shadow: 0 0 10px #e50914; /* Brillo de neón rockero */
+}
+
+/* ==========================================================================
+   RESPONSIVIDADE DO HEADER (MOBILE / CELULAR)
+   ========================================================================== */
+@media (max-width: 768px) {
+    .Header {
+        padding: 15px 20px;
+        position: relative; /* Mantém o menu alinhado abaixo */
+    }
+
+    .Header h1 {
+        font-size: 1.6rem; /* Reduz um pouco o tamanho do título no celular */
+    }
+
+    .morcego-emoji {
+        font-size: 1.4rem; /* Diminui levemente os morcegos */
+    }
+
+    /* Transforma a barra de navegação em um menu vertical suspenso */
+    .Header nav {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #1a1a1a;
+        border-bottom: 4px solid #e50914;
+        max-height: 0; /* Oculto por padrão */
+        overflow: hidden;
+        transition: max-height 0.4s ease-in-out;
+        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);
+    }
+
+    /* Organiza os links um embaixo do outro no celular */
+    .Header nav ul {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 0;
+        gap: 15px;
+    }
+
+    .Header nav a {
+        font-size: 1.1rem;
+        width: 80%;
+        text-align: center;
+        padding: 10px;
+    }
+
+    /* Gatilho Tátil: Quando o usuário toca na barra superior, o menu desliza para baixo */
+    .Header:hover nav, 
+    .Header:focus-within nav {
+        max-height: 450px; /* Expande o menu dinamicamente */
+    }
+
+    /* Cria visualmente o botão de três linhas (Menu Hambúrguer) usando CSS puro */
+    .Header::after {
+        content: "☰";
+        color: #ffffff;
+        font-size: 1.8rem;
+        cursor: pointer;
+        transition: color 0.3s ease, transform 0.3s ease;
+    }
+
+    /* Transforma o ícone em "X" quando o menu é aberto */
+    .Header:hover::after {
+        content: "✕";
+        color: #e50914;
+        transform: rotate(90deg);
+    }
+}
+
+

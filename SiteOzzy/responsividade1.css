@@ -1,0 +1,85 @@
+/* ==========================================================================
+   17. RESPONSIVIDADE PARA AS PÁGINAS ANTERIORES (HOME E SOBRE)
+   ========================================================================== */
+
+/* 📱 TABLETS E TELAS MÉDIAS (Até 850px de largura) */
+@media (max-width: 850px) {
+    /* Ajusta o cabeçalho para não amassar os links */
+    .Header {
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .Header nav ul {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    /* Adapta a estrutura de duas colunas da página Sobre */
+    .wiki-layout {
+        flex-direction: column-reverse; /* Empurra a caixinha lateral para o topo no mobile */
+        gap: 30px;
+    }
+
+    .wiki-infobox {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    /* Reduz o tamanho dos títulos gigantes para caber em telas menores */
+    .hero-title {
+        font-size: 2.2rem;
+    }
+
+    .titulo-livro {
+        font-size: 1.8rem;
+        flex-wrap: wrap; /* Permite que os morcegos quebrem de linha se o título for longo */
+        gap: 10px;
+    }
+}
+
+/* 📱 CELULARES (Até 550px de largura) */
+@media (max-width: 550px) {
+    /* Deixa os parágrafos estilo livro confortáveis no celular */
+    .texto-livro {
+        font-size: 1rem;
+        line-height: 1.6;
+        text-align: left; /* Alinhamento à esquerda fica mais legível em telas muito finas */
+    }
+
+    /* Faz a moldura da foto da Home usar o espaço correto */
+    .bloco-foto-separado {
+        margin: 30px auto;
+        padding: 0 10px;
+    }
+
+    /* Transforma o grid de Notícias da Home em uma lista vertical */
+    .news-grid, .novidades-grid {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .news-card, .noticia-card {
+        width: 100%;
+    }
+
+    /* Transforma o grid de Integrantes da página Sobre em 1 coluna cheia */
+    .integrantes-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .integrante-card {
+        width: 100% !important;
+        max-width: 320px;
+    }
+
+    /* Remove os morcegos decorativos do título no celular se faltar espaço */
+    .titulo-livro::before,
+    .titulo-livro::after {
+        display: none; 
+    }
+}

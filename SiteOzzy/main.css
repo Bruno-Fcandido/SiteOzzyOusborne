@@ -1,0 +1,231 @@
+/* Novo container isolado para o bloco da foto */
+.bloco-foto-separado {
+    /* 1. Mude o tamanho da imagem por aqui! Ajuste os 450px se quiser maior ou menor */
+    max-width: 450px; 
+    margin: 50px auto; /* Mantém o espaçamento e centraliza perfeitamente na página */
+    padding: 0 20px;
+}
+
+/* Ajuste na moldura que agora está no bloco separado */
+.artista-moldura {
+    width: 100%; /* Garante que a moldura use o tamanho máximo definido no container acima */
+    border: 3px solid #2a2a2a;
+    border-bottom: 5px solid #e50914; /* Base vermelha rockeira */
+    padding: 12px;
+    background-color: #1a1a1a;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.8);
+    text-align: center; /* Centraliza a legenda */
+}
+
+.artista-foto {
+    width: 100%; /* Faz a foto preencher a moldura perfeitamente, sem sobrar fundo */
+    height: auto;
+    display: block;
+    filter: grayscale(100%) contrast(120%);
+    transition: filter 0.5s ease;
+}
+
+/* Efeito ao passar o mouse na moldura */
+.artista-moldura:hover .artista-foto {
+    filter: grayscale(0%) contrast(100%);
+}
+
+.legenda-foto {
+    font-size: 0.85rem;
+    color: #b3b3b3;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 12px;
+    font-weight: 700;
+}
+
+/* ==========================================================================
+   7. AJUSTES FINOS ESTILO LIVRO (CENTRALIZADO E CHAMATIVO)
+   ========================================================================== */
+
+/* Container para leitura imersiva e confortável */
+.container-livro {
+    max-width: 750px; /* Largura ideal para não cansar os olhos */
+    margin: 60px auto; /* Espaçamento elegante entre os blocos de texto */
+    text-align: center; /* Centraliza absolutamente todo o texto */
+    padding: 0 25px;
+}
+
+/* Títulos principais refinados */
+.titulo-livro {
+    font-size: 2.2rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Parágrafos estilo biografia de luxo */
+.texto-livro {
+    font-size: 1.15rem;
+    line-height: 1.9; /* Interlineado generoso para parecer un libro impreso */
+    color: #cccccc;   /* Gris claro de alta legibilidad sobre fondo negro */
+    text-align: center;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+}
+
+/* Formatação especial para termos em itálico (músicas) */
+.texto-livro em {
+    color: #e50914; /* Destaca os nomes das músicas em vermelho rockeiro */
+    font-style: italic;
+    font-weight: 700;
+}
+
+/* Bloco de Citação Chamativo */
+.citacao-rock {
+    font-size: 1.6rem;
+    font-style: italic;
+    font-weight: 700;
+    color: #ffffff;
+    line-height: 1.5;
+    padding: 30px;
+    border-top: 2px dashed #2a2a2a;
+    border-bottom: 2px dashed #2a2a2a;
+    margin: 40px auto;
+    max-width: 600px;
+}
+
+.citacao-autor {
+    display: block;
+    font-size: 1rem;
+    font-style: normal;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #e50914; /* Nome do Ozzy em vermelho */
+    margin-top: 15px;
+    font-weight: 900;
+}
+
+/* ==========================================================================
+   8. NOVIDADES CENTRALIZADAS
+   ========================================================================== */
+
+.novidades-secao {
+    margin-top: 60px;
+    text-align: center; /* Centraliza o título da seção */
+}
+
+.novidades-grid {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    justify-content: center; /* Centraliza as próprias placas na tela se houver espaço */
+}
+
+.noticia-card {
+    background-color: #1a1a1a;
+    border: 1px solid #2a2a2a;
+    padding: 30px;
+    border-radius: 4px;
+    flex: 1;
+    min-width: 300px;
+    
+    /* Flexbox vertical para forçar a centralização absoluta de tudo dentro dele */
+    display: flex;
+    flex-direction: column;
+    align-items: center;    /* Centraliza horizontalmente tags, títulos e botões */
+    text-align: center;     /* Centraliza as linhas de texto do parágrafo */
+    
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.noticia-card:hover {
+    transform: translateY(-5px);
+    border-color: #e50914;
+}
+
+.noticia-tag {
+    display: inline-block;
+    background-color: #e50914;
+    color: #ffffff;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 4px 10px;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+}
+
+.noticia-card h4 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+    color: #ffffff;
+}
+
+.noticia-card p {
+    color: #b3b3b3;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    font-size: 0.95rem;
+    max-width: 400px; /* Evita que o texto fique largo demais e canse a leitura */
+}
+
+.link-vermelho {
+    color: #e50914;
+    text-decoration: none;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+}
+
+.link-vermelho:hover {
+    color: #ffffff;
+}
+
+
+
+
+
+
+/* ==========================================================================
+   10. ÂNCORAS E SCROLL SUAVE
+   ========================================================================== */
+
+/* Faz com que todo clique em link de âncora role a tela suavemente */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Estilo discreto para o link de descer no menu */
+.link-ancora {
+    color: #e50914 !important; /* Destaca em vermelho */
+    font-weight: 900 !important;
+}
+
+/* Botão elegante de voltar ao topo dentro do Footer */
+.botao-subir {
+    display: inline-block;
+    color: #b3b3b3;
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 8px 16px;
+    border: 1px solid #2a2a2a;
+    border-radius: 4px;
+    background-color: #121212;
+    transition: all 0.3s ease;
+    margin-bottom: 10px;
+}
+
+.botao-subir:hover {
+    color: #ffffff;
+    border-color: #e50914;
+    box-shadow: 0 0 10px rgba(229, 9, 20, 0.5);
+    transform: translateY(-2px);
+}

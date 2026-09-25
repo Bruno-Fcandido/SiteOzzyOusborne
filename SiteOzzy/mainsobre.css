@@ -1,0 +1,402 @@
+/* ==========================================================================
+   11. BIOGRAFIA ESTILO WIKIPEDIA ROCK
+   ========================================================================== */
+
+.container-wikipedia-rock {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+/* Título estilo Wiki */
+.wiki-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
+    margin-bottom: 5px;
+}
+
+/* Linha divisória horizontal cinza escuro, típica da Wiki */
+.wiki-linha-divisoria {
+    height: 1px;
+    background-color: #333333;
+    margin-bottom: 25px;
+}
+
+/* Layout de duas colunas (Texto na esquerda, Infobox na direita) */
+.wiki-layout {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+.wiki-coluna-principal {
+    flex: 1;
+}
+
+.wiki-introducao {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: #e0e0e0;
+    margin-bottom: 25px;
+}
+
+.wiki-introducao strong {
+    color: #ffffff;
+}
+
+/* Caixa de Índice Compacta */
+.wiki-indice {
+    background-color: #1a1a1a;
+    border: 1px solid #333333;
+    padding: 15px 20px;
+    display: inline-block;
+    min-width: 250px;
+    border-radius: 4px;
+    margin-bottom: 35px;
+}
+
+.wiki-indice h5 {
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    color: #e50914; /* Destaque Vermelho */
+}
+
+.wiki-indice ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.wiki-indice a {
+    color: #b3b3b3;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.2s ease;
+}
+
+.wiki-indice a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+/* Subtítulos de seções com borda inferior vermelha rock */
+.wiki-subtitulo {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #ffffff;
+    border-bottom: 1px solid #333333;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.wiki-subtitulo::after {
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 60px;
+    height: 2px;
+    background-color: #e50914; /* Pequeno traço vermelho abaixo do título */
+}
+
+.wiki-secao {
+    margin-bottom: 35px;
+}
+
+.wiki-secao p {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: #b3b3b3;
+}
+
+.wiki-secao em {
+    color: #ffffff;
+    font-style: italic;
+}
+
+/* CAIXA LATERAL DE INFORMAÇÕES (INFOBOX) */
+.wiki-infobox {
+    width: 320px;
+    background-color: #1a1a1a;
+    border: 1px solid #333333;
+    border-top: 4px solid #e50914; /* Topo vermelho rockeira */
+    padding: 15px;
+    border-radius: 4px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+.wiki-infobox h4 {
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+}
+
+.infobox-foto-container {
+    width: 100%;
+    background-color: #121212;
+    padding: 5px;
+    border: 1px solid #2a2a2a;
+    margin-bottom: 15px;
+}
+
+.infobox-foto-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.infobox-dados {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 0.85rem;
+}
+
+.infobox-linha {
+    display: flex;
+    border-bottom: 1px solid #262626;
+    padding-bottom: 6px;
+}
+
+.info-rotulo {
+    font-weight: 700;
+    color: #888888;
+    width: 110px;
+    flex-shrink: 0;
+}
+
+.info-valor {
+    color: #e0e0e0;
+    line-height: 1.4;
+}
+
+/* Responsividade Básica para telas menores/celulares */
+@media (max-width: 768px) {
+    .wiki-layout {
+        flex-direction: column-reverse;
+    }
+    .wiki-infobox {
+        width: 100%;
+    }
+}
+
+/* ==========================================================================
+   12. ESTILIZAÇÃO DA SEÇÃO MEMORIAL
+   ========================================================================== */
+
+/* Caixa de destaque para a homenagem */
+.wiki-secao-memorial {
+    background-color: #161616;
+    border: 1px dashed #e50914; /* Borda tracejada vermelha rockeira */
+    padding: 30px;
+    border-radius: 6px;
+    margin-top: 40px;
+    box-shadow: inset 0 0 15px rgba(229, 9, 20, 0.1);
+}
+
+/* Muda a cor do traço do título para branco no memorial */
+.subtitulo-memorial::after {
+    background-color: #ffffff !important;
+}
+
+/* Formatação do bloco de datas de vida */
+.memorial-datas {
+    font-size: 1.3rem;
+    font-weight: 900;
+    color: #ffffff;
+    letter-spacing: 2px;
+    margin: 20px 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    text-shadow: 0 0 8px rgba(229, 9, 20, 0.6); /* Brilho vermelho suave */
+}
+
+.memorial-divisor {
+    color: #e50914;
+}
+
+/* Texto da homenagem */
+.memorial-texto {
+    font-size: 1.05rem;
+    line-height: 1.8;
+    color: #cccccc !important;
+    text-align: justify;
+}
+
+/* Frase de encerramento */
+.memorial-frase-final {
+    margin-top: 25px;
+    font-size: 1.1rem;
+    font-style: italic;
+    font-weight: 700;
+    color: #e50914;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+}
+/* Bloco do link de vídeo dentro do memorial */
+.memorial-video-bloco {
+    margin: 25px auto;
+    text-align: center;
+    padding: 15px;
+    background-color: #121212;
+    border: 1px solid #2a2a2a;
+    border-radius: 4px;
+    max-width: 550px;
+}
+
+/*Memorial video estilizaçao*/
+
+.video-descricao {
+    font-size: 0.9rem;
+    color: #b3b3b3;
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+/* Botão estilizado para o YouTube */
+.btn-video-rock {
+    display: inline-block;
+    background-color: #e50914; /* Vermelho Ozzy */
+    color: #ffffff !important;
+    text-decoration: none;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    padding: 10px 20px;
+    border-radius: 4px;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(229, 9, 20, 0.3);
+}
+
+.btn-video-rock:hover {
+    background-color: #ffffff;
+    color: #e50914 !important;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(255, 255, 255, 0.3);
+}
+
+
+
+/* ==========================================================================
+   13. SEÇÃO DE INTEGRANTES (GRID ROCK)
+   ========================================================================== */
+
+/* Grid que organiza os cartões dos integrantes */
+.integrantes-grid {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center; /* Centraliza os cartões caso fiquem desalinhados */
+    margin-top: 25px;
+}
+
+/* Estrutura de cada cartão individual */
+.integrante-card {
+    background-color: #1a1a1a;
+    border: 1px solid #333333;
+    border-bottom: 3px solid #2a2a2a;
+    width: calc(33.333% - 14px); /* Divide em 3 colunas perfeitas no desktop */
+    min-width: 240px; /* Impede que fiquem espremidos */
+    border-radius: 4px;
+    overflow: hidden;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.integrante-card:hover {
+    transform: translateY(-5px);
+    border-bottom-color: #e50914; /* Destaca a base em vermelho ao passar o mouse */
+}
+
+/* Área da foto */
+.integrante-foto-moldura {
+    width: 100%;
+    height: 220px; /* Altura fixa para manter todos os cartões simétricos */
+    background-color: #121212;
+    overflow: hidden;
+}
+
+.integrante-foto-moldura img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Recorta a imagem para preencher o bloco sem distorcer */
+    filter: grayscale(100%) contrast(110%); /* Preto e branco rockeiro */
+    transition: filter 0.4s ease;
+}
+
+/* A foto ganha cor quando o mouse passa por cima do cartão */
+.integrante-card:hover .integrante-foto-moldura img {
+    filter: grayscale(0%) contrast(100%);
+}
+
+/* Textos informativos de cada músico */
+.integrante-info {
+    padding: 15px;
+    text-align: center;
+}
+
+.integrante-info h4 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 5px;
+}
+
+.integrante-funcao {
+    font-size: 0.85rem;
+    color: #e50914; /* Vermelho para a função/instrumento */
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 4px;
+}
+
+.integrante-periodo {
+    font-size: 0.8rem;
+    color: #777777; /* Cinza discreto para os anos ativos */
+}
+
+/* Ajuste responsivo para telas pequenas e celulares */
+@media (max-width: 900px) {
+    .integrante-card {
+        width: calc(50% - 10px); /* Vira 2 colunas em tablets */
+    }
+}
+
+@media (max-width: 550px) {
+    .integrante-card {
+        width: 100%; /* Vira 1 coluna cheia em celulares */
+    }
+}
+
+/* ==========================================================================
+   14. DESTAQUE VERMELHO PARA O LINK DO MEMORIAL NO ÍNDICE
+   ========================================================================== */
+
+/* Força o link a ficar vermelho e em negrito */
+.wiki-indice a.link-memorial-destaque {
+    color: #e50914 !important;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+}
+
+/* Efeito ao passar o mouse: ganha um brilho neon e sublinhado */
+.wiki-indice a.link-memorial-destaque:hover {
+    color: #ffffff !important; /* Fica branco ao passar o mouse para dar contraste */
+    text-shadow: 0 0 8px #e50914; /* Brilho vermelho de fundo */
+    text-decoration: underline;
+}
+

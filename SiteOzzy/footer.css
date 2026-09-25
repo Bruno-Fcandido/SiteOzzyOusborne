@@ -1,0 +1,72 @@
+/* ==========================================================================
+   9. ESTILIZAÇÃO DO RODAPÉ (FOOTER ROCK)
+   ========================================================================== */
+
+.rodape-rock {
+    background-color: #1a1a1a; /* Mesmo preto fosco do Header */
+    border-top: 4px solid #e50914; /* Linha vermelha no topo para conectar o design */
+    padding: 40px 20px;
+    margin-top: 80px; /* Garante um espaçamento confortável após o conteúdo */
+    text-align: center;
+}
+
+.rodape-container {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px; /* Espaço uniforme entre as linhas do rodapé */
+}
+
+/* Mini Logo do Rodapé */
+.rodape-logo {
+    font-size: 1.2rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Frase de efeito */
+.rodape-frase {
+    font-size: 1rem;
+    font-style: italic;
+    color: #e50914; /* Vermelho rockeiro */
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+/* Links secundários de navegação rápida */
+.rodape-links {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.rodape-links a {
+    color: #b3b3b3;
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+}
+
+.rodape-links a:hover {
+    color: #ffffff; /* Acende ao passar o mouse */
+}
+
+/* Copyright e texto miúdo */
+.rodape-copy {
+    font-size: 0.8rem;
+    color: #666666; /* Cinza escuro discreto */
+    letter-spacing: 0.5px;
+    line-height: 1.4;
+}

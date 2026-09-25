@@ -1,0 +1,1 @@
+As paginas shows.html, galeria.html, contato.html estao sem codigo responsivo
