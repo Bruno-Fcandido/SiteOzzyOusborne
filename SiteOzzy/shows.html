@@ -1,66 +1,140 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
     <head>
         <meta charset="UTF-8">
-            <!-- Linha obrigatória para o celular não espremer o site -->
+        <!-- Linha obrigatória para o celular não espremer o site -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
-         <title>shows</title>
-         <link rel="stylesheet" href="header.css">
-         <link rel="stylesheet" href="main.css">
-         <link rel="stylesheet" href="footer.css">
-       
+        <title>Shows - Ozzy Osbourne</title>
+        <link rel="stylesheet" href="header.css">
+        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="footer.css">
+        
     </head>
 
     <body>
 
+        <!-- TOPO DO SITE (HEADER) -->
         <header class="Header" id="topo"> 
-    <div class="logo-container">
-        <span class="morcego-emoji">🦇</span>
-        <h1>Ozzy</h1>
-        <span class="morcego-emoji morcego-dir">🦇</span>
-    </div>
-    
-    <nav>
-        <ul>
-            <!-- Certifique-se de que coincide com o nome real do arquivo no seu PC -->
-            <li><a href="PaginaInicial.html">home</a></li>
-            <li><a href="sobre.html">Sobre</a></li>
-            <li><a href="discografia.html">Discografia</a></li>
-            <li><a href="shows.html">shows</a></li>
-            <li><a href="galeria.html">galeria</a></li>
-            <li><a href="contato.html">contato</a></li>
-            <li><a href="#rodape" class="link-ancora">Ir para o Fim ↓</a></li>
-        </ul>
-    </nav>
-</header>
-
-
-
-<!-- RODAPÉ DO SITE (FOOTER) -->
-    <footer class="rodape-rock" id="rodape">
-        <a href="#" class="botao-subir">▲ Voltar ao Topo</a>
-        <div class="rodape-container">
-            <div class="rodape-logo">
+            <div class="logo-container">
                 <span class="morcego-emoji">🦇</span>
-                <span>Ozzy Osbourne</span>
+                <h1>Ozzy</h1>
                 <span class="morcego-emoji morcego-dir">🦇</span>
             </div>
             
-            <p class="rodape-frase">"Long Live the Prince of Darkness"</p>
-            
-            <div class="rodape-links">
-                <a href="PaginaInicial.html">Home</a>
-                <a href="sobre.html">Sobre</a>
-                <a href="discografia.html">Discografia</a>
-                <a href="contato.html">Contato</a>
+            <nav>
+                <ul>
+                    <li><a href="PaginaInicial.html">home</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="discografia.html">Discografia</a></li>
+                    <li><a href="shows.html">shows</a></li>
+                    <li><a href="galeria.html">galeria</a></li>
+                    <li><a href="contato.html">contato</a></li>
+                    <li><a href="#rodape" class="link-ancora">Ir para o Fim ↓</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- CONTEÚDO PRINCIPAL (AGENDA DE SHOWS) -->
+        <main class="agenda-container">
+            <section class="agenda-intro">
+                <h2>No More Tours Tour</h2>
+                <p>Confira as próximas datas, locais e garanta seus ingressos para ver o Príncipe das Trevas.</p>
+            </section>
+
+            <div class="events-list">
+                
+                <!-- Show 1: Disponível -->
+                <div class="event-card">
+                    <div class="event-date">
+                        <span class="day">15</span>
+                        <span class="month">Mai</span>
+                        <span class="year">2027</span>
+                    </div>
+                    <div class="event-details">
+                        <h3 class="venue">The O2 Arena</h3>
+                        <p class="location">Londres, Reino Unido</p>
+                    </div>
+                    <div class="event-actions">
+                        <a href="https://ticketmaster.co.uk" target="_blank" class="btn-tickets">Comprar Ingresso</a>
+                    </div>
+                </div>
+
+                <!-- Show 2: Disponível -->
+                <div class="event-card">
+                    <div class="event-date">
+                        <span class="day">22</span>
+                        <span class="month">Mai</span>
+                        <span class="year">2027</span>
+                    </div>
+                    <div class="event-details">
+                        <h3 class="venue">Madison Square Garden</h3>
+                        <p class="location">Nova York, EUA</p>
+                    </div>
+                    <div class="event-actions">
+                        <a href="https://ticketmaster.com" target="_blank" class="btn-tickets">Comprar Ingresso</a>
+                    </div>
+                </div>
+
+                <!-- Show 3: Esgotado -->
+                <div class="event-card event-soldout-card">
+                    <div class="event-date">
+                        <span class="day">05</span>
+                        <span class="month">Jun</span>
+                        <span class="year">2027</span>
+                    </div>
+                    <div class="event-details">
+                        <h3 class="venue">Allianz Parque</h3>
+                        <p class="location">São Paulo, Brasil</p>
+                    </div>
+                    <div class="event-actions">
+                        <span class="btn-soldout">Esgotado</span>
+                    </div>
+                </div>
+
+                <!-- Show 4: Disponível -->
+                <div class="event-card">
+                    <div class="event-date">
+                        <span class="day">18</span>
+                        <span class="month">Jun</span>
+                        <span class="year">2027</span>
+                    </div>
+                    <div class="event-details">
+                        <h3 class="venue">Estádio Antonio Vespucio Liberti</h3>
+                        <p class="location">Buenos Aires, Argentina</p>
+                    </div>
+                    <div class="event-actions">
+                        <a href="https://ticketek.com.ar" target="_blank" class="btn-tickets">Comprar Ingresso</a>
+                    </div>
+                </div>
+
             </div>
-            
-            <p class="rodape-copy">&copy; 2026 • Desenvolvido por Fã para Fãs. Todos os direitos reservados ao Madman.</p>
-        </div>
-    </footer>
+        </main>
 
-
+        <!-- RODAPÉ DO SITE (FOOTER) -->
+        <footer class="rodape-rock" id="rodape">
+            <a href="#" class="botao-subir">▲ Voltar ao Topo</a>
+            <div class="rodape-container">
+                <div class="rodape-logo">
+                    <span class="morcego-emoji">🦇</span>
+                    <span>Ozzy Osbourne</span>
+                    <span class="morcego-emoji morcego-dir">🦇</span>
+                </div>
+                
+                <p class="rodape-frase">"Long Live the Prince of Darkness"</p>
+                
+                <div class="rodape-links">
+                    <a href="PaginaInicial.html">Home</a>
+                    <a href="sobre.html">Sobre</a>
+                    <a href="shows.html">Shows</a>
+                <a href="galeria.html">Galeria</a>
+                    <a href="discografia.html">Discografia</a>
+                    <a href="contato.html">Contato</a>
+                </div>
+                
+                <p class="rodape-copy">&copy; 2026 • Desenvolvido por Fã para Fãs. Todos os direitos reservados ao Madman.</p>
+            </div>
+        </footer>
       
     </body>
 </html>

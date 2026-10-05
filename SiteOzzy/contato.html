@@ -1,66 +1,135 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
     <head>
         <meta charset="UTF-8">
-            <!-- Linha obrigatória para o celular não espremer o site -->
+        <!-- Linha obrigatória para o celular não espremer o site -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
-         <title>contato</title>
-         <link rel="stylesheet" href="header.css">
-         <link rel="stylesheet" href="main.css">
-         <link rel="stylesheet" href="footer.css">
-       
+        <title>Contato & Fã Clube - Ozzy Osbourne</title>
+        <link rel="stylesheet" href="header.css">
+        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="footer.css">
     </head>
 
     <body>
 
+        <!-- TOPO DO SITE (HEADER) -->
         <header class="Header" id="topo"> 
-    <div class="logo-container">
-        <span class="morcego-emoji">🦇</span>
-        <h1>Ozzy</h1>
-        <span class="morcego-emoji morcego-dir">🦇</span>
-    </div>
-    
-    <nav>
-        <ul>
-            <!-- Certifique-se de que coincide com o nome real do arquivo no seu PC -->
-            <li><a href="PaginaInicial.html">home</a></li>
-            <li><a href="sobre.html">Sobre</a></li>
-            <li><a href="discografia.html">Discografia</a></li>
-            <li><a href="shows.html">shows</a></li>
-            <li><a href="galeria.html">galeria</a></li>
-            <li><a href="contato.html">contato</a></li>
-            <li><a href="#rodape" class="link-ancora">Ir para o Fim ↓</a></li>
-        </ul>
-    </nav>
-</header>
-
-
-
-<!-- RODAPÉ DO SITE (FOOTER) -->
-    <footer class="rodape-rock" id="rodape">
-        <a href="#" class="botao-subir">▲ Voltar ao Topo</a>
-        <div class="rodape-container">
-            <div class="rodape-logo">
+            <div class="logo-container">
                 <span class="morcego-emoji">🦇</span>
-                <span>Ozzy Osbourne</span>
+                <h1>Ozzy</h1>
                 <span class="morcego-emoji morcego-dir">🦇</span>
             </div>
             
-            <p class="rodape-frase">"Long Live the Prince of Darkness"</p>
-            
-            <div class="rodape-links">
-                <a href="PaginaInicial.html">Home</a>
-                <a href="sobre.html">Sobre</a>
-                <a href="discografia.html">Discografia</a>
-                <a href="contato.html">Contato</a>
+            <nav>
+                <ul>
+                    <li><a href="PaginaInicial.html">home</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="discografia.html">Discografia</a></li>
+                    <li><a href="shows.html">shows</a></li>
+                    <li><a href="galeria.html">galeria</a></li>
+                    <li><a href="contato.html">contato</a></li>
+                    <li><a href="#rodape" class="link-ancora">Ir para o Fim ↓</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- CONTEÚDO PRINCIPAL (CONTATO & FÃ CLUBE) -->
+        <main class="contato-container">
+            <section class="contato-intro">
+                <h2>Contato & Fã Clube</h2>
+                <p>Entre em contato com a administração do site ou junte-se ao fã-clube oficial para receber atualizações direto no seu e-mail.</p>
+            </section>
+
+            <div class="contato-grid">
+                
+                <!-- FORMULÁRIO DE CONTATO -->
+                <section class="contato-secao">
+                    <div class="secao-titulo">
+                        <h3><span>✉️</span> Envie uma Mensagem</h3>
+                    </div>
+                    <form action="#" method="POST" class="formulario-gótico">
+                        <div class="grupo-campo">
+                            <label for="nome">Nome:</label>
+                            <input type="text" id="nome" name="nome" placeholder="Seu nome ou apelido rockeiro" required>
+                        </div>
+
+                        <div class="grupo-campo">
+                            <label for="email">E-mail:</label>
+                            <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com" required>
+                        </div>
+
+                        <div class="grupo-campo">
+                            <label for="assunto">Assunto:</label>
+                            <select id="assunto" name="assunto" required>
+                                <option value="" disabled selected>Selecione um assunto</option>
+                                <option value="elogio">Sugestão ou Elogio</option>
+                                <option value="parceria">Parcerias / Imprensa</option>
+                                <option value="duvida">Dúvidas sobre o site</option>
+                            </select>
+                        </div>
+
+                        <div class="grupo-campo">
+                            <label for="mensagem">Mensagem:</label>
+                            <textarea id="mensagem" name="mensagem" rows="6" placeholder="Escreva sua mensagem aqui..." required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn-enviar">Enviar Mensagem ⚡</button>
+                    </form>
+                </section>
+
+                <!-- CADASTRO NA NEWSLETTER (FÃ CLUBE) -->
+                <section class="contato-secao">
+                    <div class="secao-titulo">
+                        <h3><span>🦇</span> Legião do Madman (Newsletter)</h3>
+                    </div>
+                    <div class="newsletter-card">
+                        <h4>Faça parte do Fã-Clube Oficial</h4>
+                        <p>Inscreva-se para receber novidades sobre álbuns, raridades, novos produtos da loja e avisos de shows antes de todo mundo.</p>
+                        
+                        <form action="#" method="POST" class="formulario-gótico">
+                            <div class="grupo-campo">
+                                <label for="email-news">Seu Melhor E-mail:</label>
+                                <input type="email" id="email-news" name="email_newsletter" placeholder="entrar.na.legiao@email.com" required>
+                            </div>
+                            
+                            <div class="grupo-checkbox">
+                                <input type="checkbox" id="termos" name="aceita_termos" required>
+                                <label for="termos">Aceito receber e-mails sombrios com novidades do Ozzy.</label>
+                            </div>
+
+                            <button type="submit" class="btn-newsletter">Quero me Cadastrar ↗</button>
+                        </form>
+                    </div>
+                </section>
+
             </div>
-            
-            <p class="rodape-copy">&copy; 2026 • Desenvolvido por Fã para Fãs. Todos os direitos reservados ao Madman.</p>
-        </div>
-    </footer>
+        </main>
 
-
+        <!-- RODAPÉ DO SITE (FOOTER) -->
+        <footer class="rodape-rock" id="rodape">
+            <a href="#" class="botao-subir">▲ Voltar ao Topo</a>
+            <div class="rodape-container">
+                <div class="rodape-logo">
+                    <span class="morcego-emoji">🦇</span>
+                    <span>Ozzy Osbourne</span>
+                    <span class="morcego-emoji morcego-dir">🦇</span>
+                </div>
+                
+                <p class="rodape-frase">"Long Live the Prince of Darkness"</p>
+                
+                <div class="rodape-links">
+                    <a href="PaginaInicial.html">Home</a>
+                    <a href="sobre.html">Sobre</a>
+                    <a href="shows.html">Shows</a>
+                    <a href="galeria.html">Galeria</a>
+                    <a href="discografia.html">Discografia</a>
+                    <a href="contato.html">Contato</a>
+                </div>
+                
+                <p class="rodape-copy">&copy; 2026 • Desenvolvido por Fã para Fãs. Todos os direitos reservados ao Madman.</p>
+            </div>
+        </footer>
       
     </body>
 </html>

@@ -1,66 +1,170 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
     <head>
         <meta charset="UTF-8">
-            <!-- Linha obrigatória para o celular não espremer o site -->
+        <!-- Linha obrigatória para o celular não espremer o site -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
-         <title>galeria</title>
-         <link rel="stylesheet" href="header.css">
-         <link rel="stylesheet" href="main.css">
-         <link rel="stylesheet" href="footer.css">
-       
+        <title>Galeria - Ozzy Osbourne</title>
+        <link rel="stylesheet" href="header.css">
+        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="footer.css">
+        
     </head>
 
     <body>
 
+        <!-- TOPO DO SITE (HEADER) -->
         <header class="Header" id="topo"> 
-    <div class="logo-container">
-        <span class="morcego-emoji">🦇</span>
-        <h1>Ozzy</h1>
-        <span class="morcego-emoji morcego-dir">🦇</span>
-    </div>
-    
-    <nav>
-        <ul>
-            <!-- Certifique-se de que coincide com o nome real do arquivo no seu PC -->
-            <li><a href="PaginaInicial.html">home</a></li>
-            <li><a href="sobre.html">Sobre</a></li>
-            <li><a href="discografia.html">Discografia</a></li>
-            <li><a href="shows.html">shows</a></li>
-            <li><a href="galeria.html">galeria</a></li>
-            <li><a href="contato.html">contato</a></li>
-            <li><a href="#rodape" class="link-ancora">Ir para o Fim ↓</a></li>
-        </ul>
-    </nav>
-</header>
-
-
-
-<!-- RODAPÉ DO SITE (FOOTER) -->
-    <footer class="rodape-rock" id="rodape">
-        <a href="#" class="botao-subir">▲ Voltar ao Topo</a>
-        <div class="rodape-container">
-            <div class="rodape-logo">
+            <div class="logo-container">
                 <span class="morcego-emoji">🦇</span>
-                <span>Ozzy Osbourne</span>
+                <h1>Ozzy</h1>
                 <span class="morcego-emoji morcego-dir">🦇</span>
             </div>
             
-            <p class="rodape-frase">"Long Live the Prince of Darkness"</p>
-            
-            <div class="rodape-links">
-                <a href="PaginaInicial.html">Home</a>
-                <a href="sobre.html">Sobre</a>
-                <a href="discografia.html">Discografia</a>
-                <a href="contato.html">Contato</a>
+            <nav>
+                <ul>
+                    <li><a href="PaginaInicial.html">home</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="discografia.html">Discografia</a></li>
+                    <li><a href="shows.html">shows</a></li>
+                    <li><a href="galeria.html">galeria</a></li>
+                    <li><a href="contato.html">contato</a></li>
+                    <li><a href="#rodape" class="link-ancora">Ir para o Fim ↓</a></li>
+                </ul>
+            </nav>
+        </header>
+
+                <!-- CONTEÚDO PRINCIPAL (GALERIA MULTIMÍDIA) -->
+        <main class="galeria-container">
+            <section class="galeria-intro">
+                <h2>Galeria das Sombras</h2>
+                <p>Explore as fotos de apresentações icônicas e assista aos videoclipes oficiais.</p>
+            </section>
+
+            <!-- SEÇÃO DE FOTOS (SEM ZOOM - APENAS BORDAS ESTILIZADAS) -->
+            <section class="galeria-secao">
+                <div class="secao-titulo">
+                    <h3><span>⚡</span> Fotos de Shows & Bastidores</h3>
+                </div>
+                <div class="fotos-grid">
+                    
+                    <!-- Foto 1 -->
+                    <div class="foto-card">
+                        <div class="foto-moldura">
+                            <img src="imagens/ozzy.palcooooo.jpg" alt="Ao Vivo no Palco">
+                        </div>
+                        <div class="foto-info">
+                            <h4>Ao Vivo no Palco</h4>
+                            <p>Turnê mundial clássica</p>
+                        </div>
+                    </div>
+
+                    <!-- Foto 2 -->
+                    <div class="foto-card">
+                        <div class="foto-moldura">
+                            <img src="imagens/ozzybastidores.jpeg" alt="Nos Bastidores">
+                        </div>
+                        <div class="foto-info">
+                            <h4>Nos Bastidores</h4>
+                            <p>Momentos antes de entrar em cena</p>
+                        </div>
+                    </div>
+
+                    <!-- Foto 3 -->
+                    <div class="foto-card">
+                        <div class="foto-moldura">
+                            <img src="imagens/fasozyy.jpg" alt="O Príncipe das Trevas">
+                        </div>
+                        <div class="foto-info">
+                            <h4>O Príncipe das Trevas</h4>
+                            <p>Energia pura com os fãs</p>
+                        </div>
+                    </div>
+
+                    <!-- Foto 4 -->
+                    <div class="foto-card">
+                        <div class="foto-moldura">
+                            <img src="imagens/guitarras.jpg" alt="Backstage Pass">
+                        </div>
+                        <div class="foto-info">
+                            <h4>Backstage Pass</h4>
+                            <p>A preparação das guitarras insanas</p>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+                        <!-- SEÇÃO DE VIDEOCLIPES (SUBSTITUÍDA POR LINKS EXTERNOS SEGUROS) -->
+            <section class="galeria-secao">
+                <div class="secao-titulo">
+                    <h3><span>🎬</span> Clássicos Imortais</h3>
+                </div>
+                <div class="videos-grid">
+                    
+                    <!-- Video 1 -->
+                    <div class="video-card">
+                        <div class="video-link-container">
+                            <span class="video-icon">🎥</span>
+                            <h4>Crazy Train</h4>
+                            <p>O hino eterno do heavy metal lançado originalmente em 1980.</p>
+                            <!-- Substitua o "#" pelo link do vídeo do YouTube quando quiser -->
+                            <a href="https://youtu.be/tMDFv5m18Pw?si=CeOmj3KKqDZ-Z833" target="_blank" class="btn-video-link">Assistir no YouTube ↗</a>
+                        </div>
+                    </div>
+
+                    <!-- Video 2 -->
+                    <div class="video-card">
+                        <div class="video-link-container">
+                            <span class="video-icon">🎥</span>
+                            <h4>Bark at the Moon</h4>
+                            <p>O místico lobisomem do rock em um dos videoclipes mais teatrais de Ozzy.</p>
+                            <!-- Substitua o "#" pelo link do vídeo do YouTube quando quiser -->
+                            <a href="https://youtu.be/LplPi2CxNHI?si=XcReYQtQq30qHy2_" target="_blank" class="btn-video-link">Assistir no YouTube ↗</a>
+                        </div>
+                    </div>
+
+                    <!-- Video 3 -->
+                    <div class="video-card">
+                        <div class="video-link-container">
+                            <span class="video-icon">🎥</span>
+                            <h4>Mama, I'm Coming Home</h4>
+                            <p>A balada definitiva dedicada à sua esposa Sharon.</p>
+                            <!-- Substitua o "#" pelo link do vídeo do YouTube quando quiser -->
+                            <a href="https://youtu.be/4VRUr4elMG0?si=q-9tJGrXoBAIZky3" target="_blank" class="btn-video-link">Assistir no YouTube ↗</a>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+        </main>
+
+        <!-- RODAPÉ DO SITE (FOOTER) -->
+        <footer class="rodape-rock" id="rodape">
+            <a href="#" class="botao-subir">▲ Voltar ao Topo</a>
+            <div class="rodape-container">
+                <div class="rodape-logo">
+                    <span class="morcego-emoji">🦇</span>
+                    <span>Ozzy Osbourne</span>
+                    <span class="morcego-emoji morcego-dir">🦇</span>
+                </div>
+                
+                <p class="rodape-frase">"Long Live the Prince of Darkness"</p>
+                
+                <div class="rodape-links">
+                    <a href="PaginaInicial.html">Home</a>
+                    <a href="sobre.html">Sobre</a>
+                    <a href="shows.html">Shows</a>
+                    <a href="galeria.html">Galeria</a>
+                    <a href="discografia.html">Discografia</a>
+                    <a href="contato.html">Contato</a>
+                </div>
+                
+                <p class="rodape-copy">&copy; 2026 • Desenvolvido por Fã para Fãs. Todos os direitos reservados ao Madman.</p>
             </div>
-            
-            <p class="rodape-copy">&copy; 2026 • Desenvolvido por Fã para Fãs. Todos os direitos reservados ao Madman.</p>
-        </div>
-    </footer>
-
-
+        </footer>
       
     </body>
 </html>
